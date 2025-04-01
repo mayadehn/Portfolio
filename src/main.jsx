@@ -14,7 +14,8 @@ const routes = createBrowserRouter([
     path: 'project/:id',
     element: <ProjectDetail />
   },
-]
+],
+  { basename: '/Portfolio/' }
 )
 
 createRoot(document.getElementById('root')).render(
