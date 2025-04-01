@@ -1,0 +1,89 @@
+.dark-mode {
+    #home {
+        .content {
+
+            h1,
+            p {
+                color: #FFFFFF;
+            }
+
+            button {
+                background-color: #583FBC;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+#home {
+    margin-top: 85px;
+    padding: 54px 70px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('./../../assets/images/Hero.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    height: 100vh;
+    z-index: 2;
+    position: relative;
+
+    .content {
+        max-width: 600px;
+        padding-top: 80px;
+
+        h1 {
+            color: #1D2130;
+            font-size: 55px;
+            font-weight: 400;
+
+            span {
+                font-weight: 700;
+            }
+        }
+
+        p {
+            margin: 8px 0 30px;
+            font-weight: 400;
+            font-size: 18px;
+            color: #43495B;
+            max-width: 370px;
+        }
+
+        button {
+            background-color: #FFFFFF99;
+            color: #1D2130;
+            padding: 12px 25px;
+            border-radius: 6px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    .lines {
+        position: absolute;
+        bottom: 40px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #home {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+        padding: 30px;
+        z-index: 0;
+
+        .content {
+            padding-top: 0;
+        }
+
+        .lines {
+            display: none;
+        }
+    }
+}

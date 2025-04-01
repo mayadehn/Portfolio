@@ -1,0 +1,120 @@
+.dark-mode {
+    #education {
+        .header {
+            h1 {
+                color: #FFFFFF;
+            }
+        }
+
+        .content {
+            .column {
+                h2 {
+                    color: #FFFFFF;
+                }
+
+                p {
+                    color: #98A2B3;
+                }
+            }
+        }
+
+    }
+}
+
+#education {
+    height: 100vh;
+    margin-top: 60px;
+    padding-bottom: 100px;
+    padding: 0 70px;
+    position: relative;
+
+    .header {
+        text-align: center;
+
+        h3 {
+            color: #583FBC;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        h1 {
+            color: #282938;
+            font-size: 40px;
+            font-weight: 600;
+            margin: 8px 0 88px;
+        }
+    }
+
+    .content {
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: space-between;
+
+        .column {
+            display: flex;
+            gap: 48px;
+            max-width: 600px;
+
+            h2 {
+                margin-bottom: 14px;
+                color: #344054;
+                font-size: 25px;
+                font-weight: 500;
+            }
+
+            p {
+                margin-bottom: 45px;
+                color: #98A2B3;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .right-bg,
+    .left-bg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    .right-bg {
+        top: 0;
+        right: 0;
+    }
+
+    .left-bg {
+        bottom: 0;
+        left: 0;
+    }
+
+    button {
+        background-color: #583FBC;
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+        border: none;
+        position: absolute;
+        right: 70px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .25);
+        ;
+    }
+}
+
+
+@media screen and (max-width:992px) {
+    #education {
+        padding: 0 30px;
+        margin-top: 20px;
+
+        .content {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        button {
+            right: 30px;
+        }
+    }
+}
